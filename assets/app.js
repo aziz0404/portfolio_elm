@@ -26,5 +26,6 @@ import './js/flipAnimation.js';
 //scroll reveal
 import './js/flipTimeline.js';
 
-
+//card
+import './js/flip-box';
 
