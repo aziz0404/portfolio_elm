@@ -1,0 +1,118 @@
+@import "~bootstrap/scss/bootstrap";
+@import "shared/_variables.scss";
+
+
+header {
+  margin-top: 15%;
+}
+
+body {
+
+  background: radial-gradient(circle at top left, white, rgb(102, 102, 102));
+  background-size: cover ;
+  background-size: 1700px ;
+
+}
+
+
+//home 
+.content {
+  height : 100vh;
+  width:100%;
+  background-image: url(../img/symfony-vs-laravel2.png);
+  background-size: cover;
+}
+.container-home {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 20%;
+}
+
+
+// Class
+.center-block {
+  margin: 0 auto;
+  
+}
+
+.card-body:hover {
+    background-color: #39d0ee;
+    color : black;
+}
+
+h2 {
+color: #398897;
+}
+
+#home {
+    color:rgb(75,0,130)  ;
+
+    background-color: rgba(82, 172, 207, 0.6);
+}
+// skills
+
+
+ul.skills-list {
+    padding-left: 0px;
+}
+
+.skills-list li {
+    display: inline-block;
+    padding: 0 1em;
+    margin: 5px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #fff;
+    background: #39d0ee;
+}
+
+/* Timeline */
+
+@import "shared/_flipTimeline.scss";
+
+
+
+/*contact form**/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import "shared/_contact-form.scss";
+
+/*flip card scss*/
+@import "shared/_flip-card.scss";
+
+
+ /*animation Flip*/
+
+ .split-character span {
+  display: inline-block;
+}
+
+.title span > span {
+  opacity: 0;
+  animation: flipAnimation 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 1 forwards;
+}
+
+@keyframes flipAnimation {
+  from {
+    transform: scale(-1, 1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+footer {
+  background: radial-gradient(circle at top left,grey, rgb(25, 25, 112));
+  background-color: rgb(25, 25, 112) ;
+
+  color: black;
+
+
+}

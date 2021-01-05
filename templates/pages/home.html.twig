@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title %}Aziz EL MADRAJ!{% endblock %}</title>
+        {% block stylesheets %}{{ encore_entry_link_tags('app') }}{% endblock %}
+
+
+{% block body %}
+
+
+<div class="content">
+  <div class="container-home">
+    <div class="center-block">.
+      <header class='container h-100' >
+        <div class='d-flex align-items-center justify-content-center h-100' >
+          <div class='d-flex flex-column'>
+            <h1 class='text align-self-center p-2' id ='home'>El Madraj Aziz</h1>
+            <h3 class='text align-self-center p-2' id ='home'>Ingénieur généraliste en reconversion
+            je recherche une entreprise, afin <br> de poursuivre ma formation de développeur logiciel. </h3><p>&nbsp;</p>
+            <div>
+            <h3 class='text align-self-center p-2' id ='home'> 
+            <center class='title split-character'>Découvrez mon portfolio, mon parcour, et mes premiers pas vers le développement
+            informatique</center> </h3></div>
+            
+            
+            <div  class='mx-auto' style='width: 200px;' style='margin-top: 20px;'><center><a href='{{ path('app_pages_presentation') }}' class='btn btn-secondary'
+            style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77); font-family: MontSerrat;'>Hello World !
+        </a></center></div>
+          </div>
+          
+        </div>    
+      </header>
+    </div>  
+  </div>
+</div>
+
+{% endblock %}
+{% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}

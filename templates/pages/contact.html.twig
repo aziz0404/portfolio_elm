@@ -1,0 +1,175 @@
+{% extends '/layouts/base.html.twig' %}
+
+{% block title 'Contact' %}
+
+{% block body %}
+
+
+    <main>
+        <div class="container">
+        <div class='row text-center'>
+            <div class=' col-sm-6  col-sm-offset-0 '>
+                <h2>CV</h2>
+                <div class='content-image'>
+                    <a target='_blank' href='doc/EL_Madraj_AZIZ_CV_.pdf'> <img src='img/apercu-cv.PNG' width='200' height='300' class='img-fluid'></a>
+                    <a target='_blank' href='doc/EL_Madraj_AZIZ_CV_.pdf' class='overlay'>
+                        <i class='fa fa-search fa-2x'></i>
+                    </a>
+                </div>
+            </div>
+    
+    
+            <div class='col-sm-6 col-sm-offset-2 col-sm-4 '>
+                
+                <div class="container">
+                    <div class="column">
+                        <div class="pt-5 col-6">
+                            <div class="card card-flip h-100">
+                                <div class="card-front text-white bg-dark">
+                                    <div class="card-body">
+                                        <i class="fa fa-search fa-5x float-right"></i>
+                                        <h3 class="card-title">Contact</h3>
+                                        <p class="card-text"><i class='far fa-envelope mr-2'></i></p>
+                                    </div>
+                                </div>
+                                <div class="card-back bg-white">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Mail</h3>
+                                        <p class="card-text">aziz.elmadraj@gmail.com!</p>
+                                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6"">
+                            <div class="card card-flip h-100">
+                                <div class="card-front text-white bg-warning">
+                                    <div class="card-body">
+                                        <i class="fa fa-search-plus fa-5x float-right"></i>
+                                        <h3 class="card-title">Front</h3>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                                <div class="card-back bg-dark text-white">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Back #2</h3>
+                                        <p class="card-text">Suprise this one has content on the back!</p>
+                                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card card-flip h-100">
+                                <div class="card-front text-white bg-primary">
+                                    <div class="card-body">
+                                        <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
+                                        <h3 class="card-title">Front</h3>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content. This one is a little because it has more text!</p>
+                                    </div>
+                                </div>
+                                <div class="card-back bg-white">
+                                    <div class="card-body text-primary">
+                                        <h3 class="card-title">Wow! #3</h3>
+                                        <p class="card-text">Suprise this one has content on the back!</p>
+                                        <a href="#" class="btn btn-outline-primary">Action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+                {# <div class='flip-box-container'>
+                    <div class='bod-flip-box'>
+                        <div class='flip-inner' style='height: 88px;'>
+                            <div class='flip-front'>
+                                <div class='flip-front-content'>
+                                    <div class='flip-front-title'>Contact</div>
+                                </div>
+                            </div>
+                            <div class='flip-back'>
+                                <div class='flip-back-content'>
+                                    <i class='far fa-envelope mr-2'></i>
+    
+                                    <script type='text/javascript' language='javascript'>
+                                        
+                                    </script><a href='' onmouseover='this.href='mailto:aziz.elmadraj@gmail.com'' onmouseout='this.href='''>aziz.elmadraj@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class='bod-flip-box'>
+                        <div class='flip-inner' style='height: 88px;'>
+                            <div class='flip-front'>
+                                <div class='flip-front-content'>
+    
+                                    <div class='flip-front-title'>Github</div>
+                                </div>
+                            </div>
+                            <div class='flip-back'>
+                                <div class='flip-back-content'>
+                                    <i class='fab fa-github fa-2x mr-2'></i> <a href='https://github.com/aziz0404' target='_blank'>https://github.com/aziz0404</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class='bod-flip-box'>
+                        <div class='flip-inner' style='height: 88px;'>
+                            <div class='flip-front'>
+                                <div class='flip-front-content'>
+    
+                                    <div class='flip-front-title'>Linkedin</div>
+                                </div>
+                            </div>
+                            <div class='flip-back'>
+                                <div class='flip-back-content'>
+                                    <i class='fab fa-github fa-2x mr-2'></i> <a href='https://fr.linkedin.com/in/aziz-el-madraj-621a28b9' target='_blank'>Aziz EL MADRAJ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div> #}
+    
+    
+        </div>
+    </section>
+    <div class='container'>
+        <form id='contact' class='contact-form' action='index.php?page=contactform  ' method='post'>
+            <h3>Contactez moi</h3>
+        
+            <fieldset>
+                <input placeholder='Votre nom' name ='name' type='text' tabindex='1' required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder='Votre adresse mail' name='email' type='email' tabindex='2' required>
+            </fieldset>
+            <fieldset>
+                <input placeholder='Votre numéro de téléphone (optionel)' name='tel' type='tel' tabindex='3' >
+            </fieldset>
+            <fieldset>
+                <input placeholder='Votre site, web (optionel)' type='url' name='url' tabindex='4' >
+            </fieldset>
+            <fieldset>
+                <textarea placeholder='Donnez votre message ici....' tabindex='5' name='message' required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name='submit' type='submit' id='contact-submit' data-submit='...Sending'>Soumettre</button>
+            </fieldset>
+            
+        </form>
+    </div>
+    
+   
+    </div>
+    </main>
+
+
+
+
+{% endblock %}

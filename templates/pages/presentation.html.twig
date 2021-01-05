@@ -1,0 +1,506 @@
+{% extends '/layouts/base.html.twig' %}
+
+{% block title 'Présentation' %}
+
+{% block body %}
+
+
+<div id='presentation'>
+    <div class='row' style='display: flex; justify-content: center; margin-top: 30px;'>
+
+        <div class='col-8 col-sm-8 col-md-5 col-lg-3 col-xl-3'>
+            <div style='margin-bottom: 30px;'>
+                <div class='card'><img width='100%' src='img/work-experience.jpg' alt='Card image cap' class='card-img'
+                        style='height: 200px;'>
+                    <div class='card-body'>
+                        <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>Expériences
+                        </div>
+                        <p style='color: black; font-size: 14px;'>Venez découvrir mes diverses activités
+                            professionnelles
+                            avant ma reconversion. </p>
+                        <button class='btn btn-primary'
+                            style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>
+                            <a href='#container-fluid-1'>Cliquons !</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='col-8 col-sm-8 col-md-5 col-lg-3 col-xl-3'>
+            <div style='margin-bottom: 30px;'>
+                <div class='card'><img width='100%' src='img/formation.jpg' alt='Card image cap' class='card-img'
+                        style='height: 200px;'>
+                    <div class='card-body'>
+                        <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>Formations</div>
+                        <p style='color: black; font-size: 14px;'>Du BAC à l'école d'ingénieur, en passant par un DUT
+                            et un BACHELOR
+                            : ce qu'il y a à savoir.</p>
+                        <button class='btn btn-primary'
+                            style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'><a
+                                href='#container-fluid-2'>Allons voir
+                                !</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='col-8 col-sm-8 col-md-5 col-lg-3 col-xl-3'>
+            <div style='margin-bottom: 30px;'>
+                <div class='card'>
+                    <img width='100%' src='img/competence.jpg' alt='Card image cap' class='card-img'
+                        style='height: 200px;'>
+                    <div class='card-body'>
+                        <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                            Compétences
+                        </div>
+                        <p style='color: black; font-size: 14px;'>
+                            Grâce à mes expériences, j'ai pu acquérir des compétences et des technologies.</p>
+                        <button class='btn btn-primary'
+                            style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>
+                             <a
+                                href='#container-fluid-3'>
+                                C'est parti !</a>
+                        
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class='back'>
+    <div class='container-fluid p-5 bg-light text-center' id='container-fluid-1' style='margin-top: 100px;'>
+        <h2 class='text-color-red'>
+            <i class='fas fa-terminal'></i>
+            Mon parcours professionnel
+        </h2>
+
+    </div>
+
+
+    <div id='experiences' class='container'
+        style='display: flex; flex-direction: column; border-width: 1px; border-top-style: solid; border-color: rgb(232, 232, 232);'>
+
+        <div class='row' style='display: flex; margin-top: 40px; margin-bottom: 20px;'>
+
+            <div class='col-12 col-md-6'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div style='min-height: 200px;'>
+                            <div class='card'>
+                                <img width='100%' src='img/renault-zoe.jpg' alt='Card image cap' class='card-img'
+                                    style='height: 200px;'>
+                                <div class='card-body'>
+                                    <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                        Assistant chef de projet industriel</div>
+
+                                    <p class='card-text' style='font-size: 14px; color: black;'>Structuration et
+                                        pilotage
+                                        des activités d'une chaine de montage véhicule </br><i>Octobre 2017 / Septembre
+                                            2020</i> </p>
+
+                                    <button type='button' class='btn btn-primary' data-toggle='modal'
+                                        data-target='#myModal2'
+                                        style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                                    <div id='myModal2' class='modal fade' role='dialog'>
+                                        <div class='modal-dialog'>
+
+                                            <!-- Modal content-->
+                                            <div class='modal-content'>
+                                                <div class='modal-header'>
+                                                    <button type='button' class='close' data-dismiss='modal'>×</button>
+                                                    <h4 class='modal-title'>Assistant chef de projet industriel</h4>
+                                                </div>
+                                                <div class='modal-body'>
+                                                    <p>• Mise en place d’outil automatisé (macro, VBA), afin de
+                                                    remonté
+                                                    les problèmes rencontrés sur la ligne de production.</p>
+
+                                                    <p>• Audit qualité</p>
+                                                    <p>• Optimisation de poste, (Qualité Cout Délais)</p>
+                                                    <p>• Lean Management
+                                                    </p>
+                                                </div>
+                                                <div class='modal-footer'>
+                                                    <button type='button' class='btn btn-default'
+                                                        data-dismiss='modal'>Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row' style='margin-top: 20px;'>
+                    <div class='col-sm-12 col-md-9 col-lg-6'>
+                        <div style='min-height: 200px;'>
+                            <div class='card'>
+                                <div class='card-body'>
+                                    <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                        Stagiaire base de données
+                                    </div>
+                                    <div class='card-subtitle'>Dirasat International</div>
+
+
+
+                                    <p class='card-text' style='font-size: 14px; color: black;'>Stagiaire base de
+                                        données.</br><i>Mai 2019 / Aout 2019</i></p>
+                                    <button type='button' class='btn btn-primary' data-toggle='modal'
+                                        data-target='#myModal3'
+                                        style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                                    <div id='myModal3' class='modal fade' role='dialog'>
+                                        <div class='modal-dialog'>
+
+                                          
+                                            <div class='modal-content'>
+                                                <div class='modal-header'>
+                                                    <button type='button' class='close' data-dismiss='modal'>×</button>
+                                                    <h4 class='modal-title'>Stagiaire base de données</h4>
+                                                </div>
+                                                <div class='modal-body'>
+                                                   
+                                                    <p>• Proposition de correction et harmonisation de base de
+                                                    données</p>
+                                                    <p>• parsing</p>
+                                                    <p>• Prototype d’un site Web, pour une fondation.
+                                                    </p>
+
+                                                    
+                                                </div>
+                                                <div class='modal-footer'>
+                                                    <button type='button' class='btn btn-default'
+                                                        data-dismiss='modal'>Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-12 col-md-9 col-lg-6'>
+                        <div style='min-height: 200px;'>
+                            <div class='card'>
+                                <div class='card-body'>
+                                    <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                        Stagiaire qualité</div>
+                                    <div>
+                                        <div class='card-subtitle'>Nanterre Université</div>
+
+                                    </div>
+                                    <p class='card-text' style='font-size: 14px; color: black;'>Responsable de la
+                                        certification du service de Formation Continu.</br><i>Avril 2017 / Aout 2017</i>
+                                    </p>
+                                    <button type='button' class='btn btn-primary' data-toggle='modal'
+                                        data-target='#myModal4'
+                                        style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                                    <div id='myModal4' class='modal fade' role='dialog'>
+                                        <div class='modal-dialog'>
+
+                                            <!-- Modal content-->
+                                            <div class='modal-content'>
+                                                <div class='modal-header'>
+                                                    <button type='button' class='close' data-dismiss='modal'>×</button>
+                                                    <h4 class='modal-title'>Stagiaire assistant qualité </h4>
+                                                </div>
+                                                <div class='modal-body'>
+                                                    <p>• Assister le Pilotage de la démarche Qualité pour le service de
+                                                        formation continue</p>
+                                                    <p>• Accompagner la mise à jour de la cartographie des processus</p>
+                                                    <p>• Préparer la gestion des indicateurs de performance et des
+                                                        enquêtes de satisfaction
+                                                    </p>
+                                                </div>
+                                                <div class='modal-footer'>
+                                                    <button type='button' class='btn btn-default'
+                                                        data-dismiss='modal'>Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-12 col-md-6'>
+                <div style='min-height: 400px;'>
+                    <div class='card'>
+                        <img  src='img/etna-logo2.jpg' alt='Card image cap' class='card-img'>
+
+                        <div class='card-body'>
+                            <div class='card-title'
+                                style='font-weight: bold; margin-top: 15px; font-family: Montserrat;'>Développeur
+                                informatique full-stack
+                            </div>
+                            <div>
+                                <div class='card-subtitle'> L’École des Technologies Numériques Avancées </div>
+
+                            </div>
+                            <p class='card-text'
+                                style='font-size: 14px; color: black; margin-top: 26px; padding-top: 15px; border-width: 1px; border-top-style: solid; border-color: rgb(232, 232, 232);'>
+                                Piscine de 6 semaines (apprentissage intensif C, Web et Shell).</br><i>Octobre 2020 /
+                                    Novembre 2020</i></p>
+
+                            <button type='button' class='btn btn-primary' data-toggle='modal' data-target='#myModal1'
+                                style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                            <div id='myModal1' class='modal fade' role='dialog'>
+                                <div class='modal-dialog'>
+
+                                    <!-- Modal content-->
+                                    <div class='modal-content'>
+                                        <div class='modal-header'>
+                                            <button type='button' class='close' data-dismiss='modal'>×</button>
+                                            <h4 class='modal-title'>Road to be a Développeur</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>• Fondamentaux du WEB</p>
+
+                                                    <p>• Fondamentaux du developpement en C</p>
+                                                    <p>• Création de portfolio</p>
+                                                    <p>• Fondamentaux des bases de UNIX
+                                                    </p>
+                                                    <p>• Algostats : Exercices d'algorithmie en PHP</p>
+                                                    <p>• Projet Crowdin : Création d'un site de traduction communautaire de
+                                                    fichiers sous Symfony
+                                                    </p>
+
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <button type='button' class='btn btn-default'
+                                                data-dismiss='modal'>Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class='back'>
+
+    <div class='container-fluid p-5 bg-light text-center' id='container-fluid-2' style='margin-top: 100px;'>
+        <h2 class='text-color-red'>
+            <i class='fas fa-terminal'></i>
+            Mes formations
+        </h2>
+
+    </div>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <div class='timeline' id='experiences'>
+        <div class='container'>
+
+
+            <div class='timeline-item'>
+                <div class='timeline-img'></div>
+
+                <div class='timeline-content js--fadeInLeft' style='visibility: visible;'>
+                    <h2>Etudiant en informatique, ETNA (L’École des Technologies Numériques Avancées) </h2>
+                    <div class='date'>Octobre 2020</div>
+
+                    <ul>
+                        <li>Développement de mon portfolio en PHP</li>
+                        <li>Apprentissage du développement web (framework, LARAVEL, SYMFONY)</li>
+                        <li>Piscine (SHELL Unix,language C, PHP) </li>
+                        <li>Algorithmie</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class='timeline-item'>
+                <div class='timeline-img'></div>
+
+                <div class='timeline-content js--fadeInLeft' style='visibility: visible;'>
+                    <h2>Ingénieur Généraliste <i class='fas fa-angle-double-right '></i>EI.CESI école d'ingénieur
+                        généraliste</h2>
+                    <div class='date'>Octobre 2017 / Septembre 2020</div>
+                    <ul>
+                        <li>Ingénierie mécanique</li>
+                        <li>Management de projet</li>
+                        <li>Lean Management</li>
+                        <li>Certification Green Belt</li>
+                        <li>Optimisation de production</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='timeline-item'>
+
+                <div class='timeline-img'></div>
+
+                <div class='timeline-content js--fadeInRight' style='visibility: visible;'>
+                    <h2>Coding Accelerator</h2>
+                    <div class='date'>Janvier 2020</div>
+                    <p>Apprentissages des blocs élémentaires qui composent le coding et qui sont nécessaires pour avoir
+                        des fondations en programmation.
+                    </p>
+                </div>
+
+            </div>
+            <div class='timeline-item'>
+                <div class='timeline-img'></div>
+
+                <div class='timeline-content js--fadeInLeft' style='visibility: visible;'>
+                    <h2>DUT Qualité Logistique Industriel et Organisationnel</h2>
+                    <div class='date'>Septembre 2015 / Aout 20117</div>
+                    <ul>
+                    <li>Management d’un projet</li>
+                    <li>Qualité normatives (Qualité Hygiène Sécurité Environnement)</li>
+                    <li>amélioration
+                    continu</li>
+                    <li>cours de maitrise de gestion de production assisté par ordinateur</li>
+                </ul>
+                   
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class='back'>
+    <div class='container-fluid p-5 bg-light text-center' id='container-fluid-3'>
+        <h2 class='text-color-red'>
+            <i class='fas fa-terminal'></i>
+            Compétences
+        </h2>
+        <p class='mb-0'>Les technologies que j'utilise</p>
+    </div>
+
+    <!-- Langages / Framework -->
+    <div class='container'>
+        <div class='col-lg-12 my-4'>
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Technologies
+                    </h3>
+
+                    <ul class='skills-list my-4 skills-center'>
+                        <li>PHP</li>
+                        <li>Symfony</li>
+                        <li>Laravel</li>
+                        
+                        <li>SQL</li>
+                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Outils
+                    </h3>
+
+                    <ul class='skills-list my-4 skills-center'>
+                        <li>Git</li>
+                        <li>PHPStorm</li>
+                        <li>Jquery</li>
+                        <li>WordPress</li>
+                        <li>Twig</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-lg-12 my-4'>
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Système d'exploitation
+                    </h3>
+                    <ul class='skills-list my-4 skills-center'>
+                        <li>Windows</li>
+                        <li>Linux</li>
+                        <li>Debian</li>
+                        <li>Ubuntu</li>
+                    </ul>
+                </div>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Architectures
+                    </h3>
+
+                    <ul class='skills-list my-4 skills-center'>
+                        <li>MVC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-lg-12 my-4'>
+            <div class='row'>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Autres
+                    </h3>
+
+                    <ul class='skills-list my-4 skills-center'>
+
+                        <li>Anglais TOEIC : 850</li>
+                        <li>Pack Open Office</li>
+                    </ul>
+                </div>
+                <div class='col-lg-6'>
+                    <h3 class='text-center'>
+                        Savoir-être
+                    </h3>
+
+                    <ul class='skills-list my-4 skills-center'>
+                        <li>Autonome</li>
+                        <li>Curieux</li>
+                        <li>Rigoureux</li>
+                        <li>Motivé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-lg-12 my-4 text-center'>
+
+        </div>
+    </div>
+</div>
+<script src='https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js'></script>
+<script src='js/main.js'></script>
+
+{% endblock %}
