@@ -67,24 +67,24 @@
 .flip {
     position: relative;
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 1px;
     margin-bottom: 1em;
     width: 400px;
     >.front,
     >.back {
       display: block;
-      color: white;
+      color: rgb(82, 75, 184);
       width: inherit;
       background-size: cover!important;
       background-position: center!important;
       height: 200px;
-      padding: 1em 2em;
+      padding: 1em 1em;
       background: #313131;
       border-radius: 10px;
       p {
-        font-size: 0.9125rem;
-        line-height: 160%;
-        color: #999;
+        font-size: 1.5rem;
+        line-height: 200%;
+        color: rgb(55, 114, 141);
       }
     }
 }

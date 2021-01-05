@@ -1,4 +1,4 @@
-<div class="container">
+{# <div class="container">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light alpha ">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ path('app_home') }}"><img alt="Brand" src="img/symfony.png"  width="40" height="40" class="d-inline-block align-top"></a>
@@ -8,18 +8,38 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="{{ app.request.get('_route') == 'app_pages_presentation' ? ' nav-link active' : 'nav-link' }}"     href="{{ path('app_pages_presentation') }}">Présentation</a>
                     </li>
                     <li class="nav-item">
                         <a class="{{ app.request.get('_route') == 'app_pages_contact' ? ' nav-link active' : 'nav-link' }}" href="{{ path('app_pages_contact') }}">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="{{ app.request.get('_route') == 'app_pages_presentation' ? 'nav-link' : 'nav-link' }}" href="{{ path('app_home') }}">Link</a>
-                    </li>
-                    
+                   
                 </ul>
                 
             </div>
         </div>
     </nav>
+     #}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light alpha">
+        <div class="container">
+            <a class="navbar-brand" href="{{ path('app_home') }}"><img alt="Brand" src="img/symfony.png"  width="40" height="40" class="d-inline-block align-top"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mg-auto">
+              
+              
+                <li class="nav-item">
+                    <a class="{{ app.request.get('_route') == 'app_pages_presentation' ? ' nav-link active' : 'nav-link' }}"     href="{{ path('app_pages_presentation') }}">Présentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="{{ app.request.get('_route') == 'app_pages_contact' ? ' nav-link active' : 'nav-link' }}" href="{{ path('app_pages_contact') }}">Contact</a>
+                </li>
+              
+            </ul>
+          </div> 
+          </div>
+        </nav>  

@@ -7,15 +7,12 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
-
+require('bootstrap');
 // start the Stimulus application
-import './bootstrap';
+//import './bootstrap';
+const $ = require('jquery');
 
-//
-
-
-// You can specify which plugins you need
-import { Tooltip, Toast, Popover } from 'bootstrap';
+global.$ = global.jQuery = $;
 
 
 
@@ -28,4 +25,7 @@ import './js/flipTimeline.js';
 
 //card
 import './js/flip-box';
+
+
+//import $ from 'jquery';
 

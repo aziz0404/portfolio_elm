@@ -17,6 +17,7 @@ body {
 
 
 //home 
+
 .content {
   height : 100vh;
   width:100%;
@@ -52,8 +53,13 @@ color: #398897;
 
 #home {
     color:rgb(75,0,130)  ;
-
     background-color: rgba(82, 172, 207, 0.6);
+
+    
+}
+#home-animation {
+  color:gold  ;
+  background-color: rgba(82, 172, 207, 0.6);
 }
 // skills
 
@@ -82,6 +88,17 @@ ul.skills-list {
 /*contact form**/
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 @import "shared/_contact-form.scss";
+
+.blur div img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.blur div:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
 
 /*flip card scss*/
 @import "shared/_flip-card.scss";
