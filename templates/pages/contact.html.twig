@@ -5,6 +5,7 @@
 {% block body %}
 
 
+
 <main>
     <div class="container">
 
@@ -64,8 +65,8 @@
 
                 </div>
             </div>
-            <div class='container'>
-                <form id='contact' class='contact-form' action='index.php?page=contactform  ' method='post'>
+            <div class='pb-3 container'>
+                {# <form id='contact' class='contact-form' action='index.php?page=contactform  ' method='post'>
                     <h3>Contactez moi</h3>
 
                     <fieldset>
@@ -87,9 +88,14 @@
                     <fieldset>
                         <button name='submit' type='submit' id='contact-submit'
                             data-submit='...Sending'>Soumettre</button>
-                    </fieldset>
+                    </fieldset> #}
+                    {{ form_start(form) }}
+                        {{ form_widget(form) }}
+                <input type="submit" class="btn btn-primary "  value="Soumettre" formnovalidate >
+                    {{ form_end(form) }}
 
-                </form>
+
+            
             </div>
 
 
@@ -99,7 +105,5 @@
 
 
 
-<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'></script>
-   
+
 {% endblock %}

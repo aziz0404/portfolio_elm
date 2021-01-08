@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "shared/_variables.scss";
 
-
+  
 header {
   margin-top: 10%;
 }
@@ -21,7 +21,7 @@ body {
 .content {
   height : 100vh;
   width:100%;
-  background-image: url(../img/symfony-vs-laravel2.png);
+  background-image: url(../images/symfony-vs-laravel2.png);
   background-size: cover;
 }
 .container-home {
