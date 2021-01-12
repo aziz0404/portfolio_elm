@@ -16,7 +16,7 @@
 
                 <div class=' blur row  justify-content-md-center'>
                     <div class=" col-md-auto">
-                        <a target='_blank' href='doc/EL_Madraj_AZIZ_CV_.pdf'> <img src='img/apercu-cv.PNG' width='200'
+                        <a target='_blank' href={{ asset('doc/EL_Madraj_AZIZ_CV_.pdf') }}> <img src={{ asset('build/images/apercu-cv.PNG') }} width='200'
                                 height='300' class='img-fluid'></a>
                         <a target='_blank' href='doc/EL_Madraj_AZIZ_CV_.pdf' class='overlay'>
                             <i class='fa fa-search fa-2x'></i>
@@ -32,7 +32,7 @@
                     <!-- horizontal -->
 
                     <div class="flip">
-                        <div class="front" style="background-image: url(img/imag-mail2.jpg);">
+                        <div class="front" id="front1" >
 
                         </div>
                         <div class="back">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="flip">
-                        <div class="front" style="background-image: url(img/git-hub.jpg)">
+                        <div class="front" id="front2">
 
                         </div>
                         <div class="back">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="flip">
-                        <div class="front" style="background-image: url(img/linkedin.jpg)">
+                        <div class="front" id="front3" >
 
 
                         </div>
@@ -89,10 +89,10 @@
                         <button name='submit' type='submit' id='contact-submit'
                             data-submit='...Sending'>Soumettre</button>
                     </fieldset> #}
-                    {{ form_start(form) }}
+                    {# {{ form_start(form) }}
                         {{ form_widget(form) }}
                 <input type="submit" class="btn btn-primary "  value="Soumettre" formnovalidate >
-                    {{ form_end(form) }}
+                    {{ form_end(form) }} #}
 
 
             

@@ -16,7 +16,20 @@
 .beta, h1 {
   font-size: 2.2em;
 }
-
+#front1 {
+    background-image: url(../../images/imag-mail2.jpg);
+    height: 200px;
+    
+    
+}
+ #front2 {
+     background-image: url(../../images/git-hub.jpg);
+     height: 200px;
+ }
+#front3 {
+    background-image: url(../../images/linkedin.jpg);
+    height: 200px;
+}
 // base
 .flip {
     position: relative;
