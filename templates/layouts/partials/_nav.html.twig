@@ -21,6 +21,7 @@
         </div>
     </nav>
      #}
+    
      
     <div id="pad-navz" class="">
     <nav id="navz" class="navbar fixed-top navbar-expand-lg navbar-light alpha">
@@ -38,6 +39,10 @@
                 <li class="nav-item">
                     <a class="{{ app.request.get('_route') == 'app_pages_presentation' ? ' nav-link active' : 'nav-link' }}"     href="{{ path('app_pages_presentation') }}">Présentation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="{{ app.request.get('_route') == 'app_pages_project' ? ' nav-link active' : 'nav-link' }}" href="{{ path('app_pages_project') }}">Projet</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="{{ app.request.get('_route') == 'app_pages_contact' ? ' nav-link active' : 'nav-link' }}" href="{{ path('app_pages_contact') }}">Contact</a>
                 </li>

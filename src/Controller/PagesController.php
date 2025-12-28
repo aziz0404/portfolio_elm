@@ -31,6 +31,14 @@ class PagesController extends AbstractController
     }
 
     /**
+     * @Route("/projet", name="app_pages_project")
+     */
+    public function project(): Response
+    {
+        return $this->render('pages/project.html.twig');
+    }
+
+    /**
      * @Route("/contact", name="app_pages_contact")
      */
     public function contact(Request $request, MailerInterface $mailer): Response
