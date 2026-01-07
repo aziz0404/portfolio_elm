@@ -28,6 +28,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy project files
 COPY . .
 
+# Set environment to production
+ENV APP_ENV=prod
+ENV APP_DEBUG=0
+
 # Ignore les warnings PHP pendant l'installation
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV SYMFONY_DEPRECATIONS_HELPER=disabled
