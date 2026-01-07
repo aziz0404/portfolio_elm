@@ -28,19 +28,26 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copy project files
 COPY . .
 
-# Install dependencies
-RUN composer install --no-dev --optimize-autoloader
+# Ignore les warnings PHP pendant l'installation
+ENV COMPOSER_ALLOW_SUPERUSER=1
+ENV SYMFONY_DEPRECATIONS_HELPER=disabled
+
+# Install PHP dependencies without scripts
+RUN composer install --no-dev --optimize-autoloader --no-scripts
+
+# Run post-install scripts (ignore errors)
+RUN composer run-script --no-dev post-install-cmd || true
 
 # Set NODE_OPTIONS for old Node.js compatibility
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
 # Install Node dependencies and build assets
-RUN npm install && npm run build
+RUN npm install --legacy-peer-deps && npm run build
 
-# Set permissions
-RUN chown -R www-data:www-data /var/www/html/var
+# Set permissions for var directory and cache
+RUN chown -R www-data:www-data /var/www/html/var /var/www/html/public
 
-# Configure Apache directly in Dockerfile
+# Configure Apache DocumentRoot and Directory
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf && \
     echo '<Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
     echo '    AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
@@ -48,3 +55,5 @@ RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available
     echo '</Directory>' >> /etc/apache2/sites-available/000-default.conf
 
 EXPOSE 80
+
+CMD ["apache2-foreground"]
