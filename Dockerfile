@@ -44,8 +44,9 @@ ENV NODE_OPTIONS=--openssl-legacy-provider
 # Install Node dependencies and build assets
 RUN npm install --legacy-peer-deps && npm run build
 
-# Set permissions for var directory and cache
-RUN chown -R www-data:www-data /var/www/html/var /var/www/html/public
+# Create var directory and set permissions
+RUN mkdir -p /var/www/html/var && \
+    chown -R www-data:www-data /var/www/html/var /var/www/html/public
 
 # Configure Apache DocumentRoot and Directory
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf && \
