@@ -80,7 +80,131 @@
 
     <div id='experiences' class='container'
         style='display: flex; flex-direction: column; border-width: 1px; border-top-style: solid; border-color: rgb(232, 232, 232);'>
+{# NOUVELLE SECTION - Entreprenariat #}
+        <div class='row' style='display: flex; margin-top: 40px; margin-bottom: 20px;'>
+            <div class='col-12'>
+                <div style='min-height: 200px;'>
+                    <div class='card'>
+                        <div style='height: 200px; width: 100%; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #dee2e6;'>
+                            <img src={{ asset('build/images/flutter-app.png') }} alt='Flutter App' style='max-height: 120px; max-width: 70%;'>
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                Entrepreneur Indépendant</div>
+                            <div class='card-subtitle'>Paris</div>
+                            <p class='card-text' style='font-size: 14px; color: black;'>Création d'application et formation au développement</br><i>2023 / Octobre 2025</i></p>
 
+                            <button type='button' class='btn btn-primary' data-toggle='modal'
+                                data-target='#myModalEntrepreneur'
+                                style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                            <div id='myModalEntrepreneur' class='modal fade' role='dialog'>
+                                <div class='modal-dialog'>
+                                    <div class='modal-content'>
+                                        <div class='modal-header'>
+                                            <button type='button' class='close' data-dismiss='modal'>×</button>
+                                            <h4 class='modal-title'>Entrepreneur Indépendant</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>• Développement d'une application mobile cross-plateforme (Flutter/Laravel) pour l'apprentissage approfondi de l'anglais</p>
+                                            <p>• Mise en place d'une architecture API REST avec système d'authentification sécurisé</p>
+                                            <p>• Déploiement sur VPS avec Docker (Coolify) et configuration HTTPS</p>
+                                            <p>• Application en production avec ~20 utilisateurs actifs</p>
+                                            <p>• Cours particuliers, initiation au codage</p>
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <button type='button' class='btn btn-default'
+                                                data-dismiss='modal'>Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# NOUVELLE SECTION - Superviseur + Développeur Web côte à côte #}
+        <div class='row' style='display: flex; margin-top: 40px; margin-bottom: 20px;'>
+            <div class='col-12 col-md-6'>
+                <div style='min-height: 200px;'>
+                    <div class='card'>
+                        <img width='100%' src={{ asset('build/images/la-poste.png') }} alt='Card image cap' class='card-img'
+                            style='height: 200px;'>
+                        <div class='card-body'>
+                            <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                Superviseur Traitement Colis</div>
+                            <div class='card-subtitle'>La Poste</div>
+                            <p class='card-text' style='font-size: 14px; color: black;'>Supervision d'une plateforme de traitement colis</br><i>Juin 2021 / Février 2022</i></p>
+
+                            <button type='button' class='btn btn-primary' data-toggle='modal'
+                                data-target='#myModalPoste'
+                                style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                            <div id='myModalPoste' class='modal fade' role='dialog'>
+                                <div class='modal-dialog'>
+                                    <div class='modal-content'>
+                                        <div class='modal-header'>
+                                            <button type='button' class='close' data-dismiss='modal'>×</button>
+                                            <h4 class='modal-title'>Superviseur Traitement Colis</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>• Supervision d'une plateforme colis (interaction avec la maintenance, le transport et la production)</p>
+                                            <p>• Proposition d'amélioration du processus et aide à la mise en place de KPI</p>
+                                            <p>• Formation et amélioration continue</p>
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <button type='button' class='btn btn-default'
+                                                data-dismiss='modal'>Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='col-12 col-md-6'>
+                <div style='min-height: 200px;'>
+                    <div class='card'>
+                        <img width='100%' src={{ asset('build/images/symfony-dev.png') }} alt='Card image cap' class='card-img'
+                            style='height: 200px;'>
+                        <div class='card-body'>
+                            <div class='card-title' style='font-weight: bold; font-family: Montserrat;'>
+                                Développeur Web Symfony</div>
+                            <div class='card-subtitle'>Rdi-manager</div>
+                            <p class='card-text' style='font-size: 14px; color: black;'>Développement et maintenance d'applications Symfony</br><i>Février 2021 / Mars 2021</i></p>
+
+                            <button type='button' class='btn btn-primary' data-toggle='modal'
+                                data-target='#myModalSymfony'
+                                style='background-color: rgb(238, 187, 77); border-color: rgb(238, 187, 77);'>Détails</button>
+
+                            <div id='myModalSymfony' class='modal fade' role='dialog'>
+                                <div class='modal-dialog'>
+                                    <div class='modal-content'>
+                                        <div class='modal-header'>
+                                            <button type='button' class='close' data-dismiss='modal'>×</button>
+                                            <h4 class='modal-title'>Développeur Web Symfony</h4>
+                                        </div>
+                                        <div class='modal-body'>
+                                            <p>• Correction des bugs et ajout de nouvelles fonctionnalités</p>
+                                            <p>• Méthode agile</p>
+                                            <p>• Innovation côté métier et conseil</p>
+                                        </div>
+                                        <div class='modal-footer'>
+                                            <button type='button' class='btn btn-default'
+                                                data-dismiss='modal'>Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class='row' style='display: flex; margin-top: 40px; margin-bottom: 20px;'>
 
             <div class='col-12 col-md-6'>
