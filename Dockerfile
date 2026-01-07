@@ -39,7 +39,11 @@ RUN npm install && npm run build
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/var
 
-# Configure Apache
-COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
+# Configure Apache directly in Dockerfile (no external file needed)
+RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf && \
+    echo '<Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    Require all granted' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '</Directory>' >> /etc/apache2/sites-available/000-default.conf
 
 EXPOSE 80
