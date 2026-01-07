@@ -36,11 +36,11 @@ ENV APP_DEBUG=0
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV SYMFONY_DEPRECATIONS_HELPER=disabled
 
-# Install PHP dependencies without scripts
-RUN composer install --no-dev --optimize-autoloader --no-scripts
+# Install PHP dependencies WITH dev (needed for WebProfilerBundle & DebugBundle)
+RUN composer install --optimize-autoloader --no-scripts
 
 # Run post-install scripts (ignore errors)
-RUN composer run-script --no-dev post-install-cmd || true
+RUN composer run-script post-install-cmd || true
 
 # Set NODE_OPTIONS for old Node.js compatibility
 ENV NODE_OPTIONS=--openssl-legacy-provider
